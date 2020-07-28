@@ -201,6 +201,22 @@ whatIs(91);
 // Hint - you may need to study tomorrow's traning kit on arrays
 // try looking up the .includes() method
 
+let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+function countVowels(str) {
+  let count = 0;
+
+  for (let letters of str) {
+    if (vowels.includes(letters)) {
+      count++;
+    }
+  }
+
+  console.log(count);
+
+}
+
+countVowels("My names William Wearing");
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
